@@ -11,7 +11,7 @@ services:
       - "7777:8080"
     container_name: javaapp2
   reverse-proxy-11:
-    image: ahmed3la/reverse-proxy-11 
+    build: ./nginx-container-reverse-proxy 
     ports:
        - "4444:80"
     container_name: reverse-proxy-container
